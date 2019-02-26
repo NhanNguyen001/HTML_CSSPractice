@@ -1,6 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
 .main-header {
     width: 100%;
+    position: fixed;
     background: #2ddf5c;
+    top: 0;
+    left: 0;
     padding: 8px 16px;
 }
 

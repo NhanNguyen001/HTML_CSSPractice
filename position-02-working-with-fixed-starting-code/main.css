@@ -20,7 +20,7 @@ body {
     margin: 0;
   }
   
-.parent div {
+.parent span {
     background: rgb(105, 105, 109);
     color: white;
     padding: 10px;
@@ -31,4 +31,9 @@ body {
 .parent .child-1 {
     position: fixed;
     width: 400px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
