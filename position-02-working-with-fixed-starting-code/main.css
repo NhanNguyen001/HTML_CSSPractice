@@ -18,9 +18,10 @@ body {
     padding: 20px;
     border: 5px solid black;
     margin: 0;
+    overflow: hidden;
   }
   
-.parent span {
+.parent div {
     background: rgb(105, 105, 109);
     color: white;
     padding: 10px;
@@ -29,11 +30,6 @@ body {
 }
 
 .parent .child-1 {
-    position: fixed;
-    width: 400px;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+    position: relative;
+    top: 180px;
+    right: 50px;
