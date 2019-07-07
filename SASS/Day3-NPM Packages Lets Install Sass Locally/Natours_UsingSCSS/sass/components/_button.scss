@@ -1,5 +1,6 @@
 /* Styling for button */
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -22,7 +23,9 @@
     }
   }
   
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($color-black,.2);
   }
@@ -36,12 +39,21 @@
     }
   }
   
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: '';
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
